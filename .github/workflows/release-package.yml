@@ -21,7 +21,7 @@ jobs:
       - run: cd frontend && npm ci && npm run build
       - run: mkdir bundle
       - run: cp ./backend/bin/app.exe ./bundle
-      - run: cp -r ./fronend/build ./bundle
+      - run: cp -r ./frontend/build ./bundle
       - run: apt install zip
       - run: zip -r application.zip ./bundle/
 
