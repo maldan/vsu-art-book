@@ -32,9 +32,11 @@ export default function configureStore(history: History<unknown>, host: string) 
 
   const composeEnhancers =
     (typeof window !== 'undefined' &&
-      (window as { [key: string]: any })['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']) ||
+      // @ts-ignore
+      (window as { [key: string]: unknown })['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__']) ||
     compose;
 
+  // @ts-ignore
   const store = createStore(reducers, composeEnhancers(applyMiddleware(...middlewares)));
 
   sagaMiddleware.run(rootSaga);
