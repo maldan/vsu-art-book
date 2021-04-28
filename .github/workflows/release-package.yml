@@ -18,7 +18,7 @@ jobs:
       - run: git config --global user.email blackwanted@yandex.ru
       - run: node -v
       - run: npm install -g nexe
-      - run: cd backend && npm ci && npm run build && cd bin && nexe ./index.js -t windows-x86-6.11.2 -o app.exe
+      - run: cd backend && npm ci && npm run build && cd bin && nexe ./index.js -t windows-x86-14.15.3 -o app.exe
       - run: cd frontend && npm ci && npm run build
       - run: mkdir bundle
       - run: cp ./backend/bin/app.exe ./bundle
