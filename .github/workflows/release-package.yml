@@ -22,7 +22,7 @@ jobs:
       - run: mkdir bundle
       - run: cp ./backend/bin/app.exe ./bundle
       - run: cp -r ./frontend/build ./bundle
-      - run: apt install zip
+      - run: sudo apt install zip
       - run: zip -r application.zip ./bundle/
 
       - uses: "marvinpinto/action-automatic-releases@latest"
