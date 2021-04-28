@@ -1,0 +1,14 @@
+{
+  "name": "vsu-art-book",
+  "version": "1.0.1",
+  "description": "Art Book",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "art book"
+  ],
+  "author": "Maldan",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

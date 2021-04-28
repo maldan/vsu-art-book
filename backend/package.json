@@ -1,0 +1,39 @@
+{
+  "name": "art-book-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "scripts": {
+    "start": "node --unhandled-rejections=strict ./bin/index.js",
+    "dev": "tsc && node --unhandled-rejections=strict ./bin/index.js",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register test/**/*.test.ts"
+  },
+  "keywords": [],
+  "author": "Maldan",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.1.0",
+    "moment": "^2.29.1",
+    "sha1": "^1.1.1",
+    "uuid4": "^2.0.2",
+    "webview": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.16",
+    "@types/fs-extra": "^9.0.11",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^14.14.22",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "babel-eslint": "^10.1.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.24.0",
+    "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
