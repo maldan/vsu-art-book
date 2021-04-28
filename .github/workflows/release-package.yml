@@ -17,7 +17,7 @@ jobs:
       - run: git config --global user.name maldan
       - run: git config --global user.email blackwanted@yandex.ru
       - run: npm install -g nexe
-      - run: cd backend && npm ci && npm run build && cd bin && nexe ./index.js -target win32-x64-6.11.2 -o app.exe
+      - run: cd backend && npm ci && npm run build && cd bin && nexe ./index.js -t windows-x86-6.11.2 -o app.exe
       - run: mkdir bundle
       - run: cp ./backend/bin/app.exe ./bundle
       - run: cp -r ./fronend/build ./bundle
